@@ -1,0 +1,162 @@
+Conditional Statements
+======================
+Example of switch case
+---------------------
+Ex 1:
+public void setUp(String browser) {
+		switch (browser) {
+		case "chrome":
+			driver = new ChromeDriver();
+			break;
+		case "firefox":
+			driver = new FirefoxDriver();
+			break;
+		case "edge":
+			driver = new EdgeDriver();
+			break;
+		default:
+			System.out.println("test failed");
+			break;
+		}
+..................................................
+Ex 2:
+public class BasicsOfJava {
+	@Test
+	public static void switchCase() {
+		
+		int days=5;
+		
+		switch(days) {
+		case 1:System.out.println("Monday");break;
+		case 2:System.out.println("Tuesday");break;
+		case 3:System.out.println("Wednesday");break;
+		case 4:System.out.println("Thursday");break;
+		case 5:System.out.println("Friday");break;
+		case 6:System.out.println("Saturday");break;
+		case 7:System.out.println("Sunday");break;
+		default:System.out.println("not a weekday");
+		
+		}
+	}
+........................................................	
+Note: a%b=it will give remainder
+      a/b=it will always give quotient	
+      Practical: 
+      @Test
+	void calculation() {
+		int a=10;
+		int b=2;
+		int c=3;
+		System.out.println(a%b);//it will remainder and if remainder is 0 then will say a is divisible by 2
+		System.out.println(a/b);//it will quotient
+		System.out.println(a/c);//3
+		System.out.println(a%c);//1
+	}
+ ...............................................................  
+ Q. find negative, positive and zero for the given number
+ @Test
+	public static void checkNum() {
+		
+		int num = 5;
+		
+		if(num>0)
+		{
+			System.out.println("positive");
+		}
+		else if (num<0) 
+		{
+			System.out.println("negative");
+		}
+		else
+		{
+			System.out.println("zero");
+		}
+	}
+.....................................................................  
+public class BasicsOfJava {
+//	@Test
+	void LoppingStatements() {
+//for loop		
+		for (int i = 0; i <= 10; i++) {
+			System.out.println(i);
+		}
+	}
+//for-each
+	@Test
+	void forEach() {
+		int[]numbers= {6,7,8,9};
+		
+		for(int number:numbers) {
+			System.out.println(number);
+		
+		}
+		
+Q.Difference between for and for-each loop		
+for loop: Need to use an index Want to iterate with specific conditions (e.g., skip or jump steps)
+for-each loop: Just want to go through every element Don’t need to know the index
+
+-----------------------------------------------------------------------------------------
+// Print 1-10 (The condition is checked before executing the loop body. )
+	public static void printUsingWhile() {
+		int i = 1;
+
+		while (i <= 10) {
+			System.out.println(i);
+			i++;
+		}
+
+	}
+	
+// print 1-10 using While-DO (The loop body is executed at least once, and then the condition is checked.)
+	
+	public static void printUsingWhileDo() {
+		int i=1;
+		do{
+			System.out.println(i);i++;
+		}while(i<=10);
+	}
+	
+------------------------------------------------------------------------
+//Print 1-10
+	@Test
+	void PrintUsingForloop() {
+	int i;
+	int a[]= {10,20,30,40};
+	
+Print using for Loop
+	for(i=0; i<=10; i++) {
+		System.out.println(i);
+	}
+	
+Print numbers from Array
+	for(int b:a) {
+		System.out.println(b);
+	}
+	
+---------------------------------------------------------------------------
+this Keyword and super keyword 
+
+class Base {
+	int a;
+
+	 Base(int a) {
+		this.a=a;
+		System.out.println(a);
+	}
+}
+
+class HomePage extends Base {
+
+	HomePage(int a) {
+		super(a);
+		
+	}
+	
+}
+public class Practice {
+	public static void main(String[] args) {
+		HomePage obj = new HomePage(8);
+		
+
+	}
+}
