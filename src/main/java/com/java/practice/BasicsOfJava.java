@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class BasicsOfJava {
 @Test
 	public static void addTwoNumbers() {
-	int a[]= {4,6,8,7};
+	int a[]= {4,6,8,7,0,5,4,0};
 	System.out.println(a.length);
 	System.out.println(a[3]);
 	for(int b:a) {
