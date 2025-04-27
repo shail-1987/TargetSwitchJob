@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.java.practice.InterviewPreparation">
+      <class name="com.java.practice.BasicsOfJava">
         <methods>
-          <include name="tearDown"/>
-          <include name="takeScreenshots"/>
-          <include name="setUp"/>
+          <include name="addTwoNumbers"/>
         </methods>
-      </class> <!-- com.java.practice.InterviewPreparation -->
+      </class> <!-- com.java.practice.BasicsOfJava -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

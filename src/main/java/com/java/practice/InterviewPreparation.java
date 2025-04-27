@@ -16,17 +16,9 @@ import coreLogic.DifferentWaits;
 
 public class InterviewPreparation extends Base {
 	@Test
-	public static void takeScreenshots() throws IOException {
-		DifferentWaits.explicitWait("//img[@alt='company-branding']");
-	WebElement image=driver.findElement(By.xpath("//img[@alt='company-branding']"));
-	
-//	TakesScreenshot ts = (TakesScreenshot)driver;
-	File src=image.getScreenshotAs(OutputType.FILE);
-	File dest=new File(projectPath+"\\Screenshots\\image1.png");
-	FileHandler.copy(src, dest);
-	
-	
-	
+	public static void takeScreenshots() throws IOException, InterruptedException {
+		double d=67;
+		int i=(int)d;
 		
 	}
 

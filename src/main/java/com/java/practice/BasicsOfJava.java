@@ -1,32 +1,17 @@
 package com.java.practice;
 
-import java.util.ArrayList;
+import java.util.Scanner;
 
 import org.testng.annotations.Test;
 
 public class BasicsOfJava {
-	
-	//Print 1-10
-	@Test
-	void PrintUsingForloop() {
-	int i;
-	
-	for(i=0; i<=10; i++) {
-		System.out.println(i);
-	}
-	
-	//print numbers from Array
-	int a[]= {10,20,30,40};
+@Test
+	public static void addTwoNumbers() {
+	int a[]= {4,6,8,7};
+	System.out.println(a.length);
+	System.out.println(a[3]);
 	for(int b:a) {
 		System.out.println(b);
 	}
-	
-		
-		
 	}
-	
-	
-	}
-
-	
-
+}
