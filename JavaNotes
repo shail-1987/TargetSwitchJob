@@ -160,3 +160,41 @@ public class Practice {
 
 	}
 }
+===========================================================
+Array - Find the largest number 
+
+public static void largestNum() {
+
+		int a[] = { 10, 4, 5, 8 };
+		int max = a[0];
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] > max) {
+				max = a[i];
+
+			}
+
+		}
+		System.out.println(max);
+
+	}
+	
+// Find largest and smallest number ==================================
+
+	void findLargestAndSmall() {
+		int a[] = { 2, 8, 7, 3, 1, 9 };
+		int max = a[0];// 2
+		int min = a[0];// 2
+
+		for (int i = 0; i < a.length; i++) {
+
+			if (max > a[i]) {
+				a[i] = max;   //If current element is greater, update 'max'
+			} else if (a[i] < min) {
+				min = a[i];   //If current element is greater, update 'min'
+			}
+
+		}
+		System.out.println(max);
+
+	}
+	

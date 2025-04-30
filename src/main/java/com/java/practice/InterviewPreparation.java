@@ -1,25 +1,15 @@
 package com.java.practice;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.io.FileHandler;
+import com.basePackage.Base;
+import org.apache.poi.ss.formula.functions.T;
 import org.testng.annotations.Test;
 
-import com.basePackage.Base;
-
-import coreLogic.DifferentWaits;
+import java.io.IOException;
 
 public class InterviewPreparation extends Base {
 	@Test
-	public static void takeScreenshots() throws IOException, InterruptedException {
-		double d=67;
-		int i=(int)d;
-		
+	public void test() throws IOException {
+
 	}
 
-}
+	}

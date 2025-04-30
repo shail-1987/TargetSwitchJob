@@ -5,7 +5,7 @@
     <classes>
       <class name="com.java.practice.BasicsOfJava">
         <methods>
-          <include name="addTwoNumbers"/>
+          <include name="largestNum"/>
         </methods>
       </class> <!-- com.java.practice.BasicsOfJava -->
     </classes>

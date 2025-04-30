@@ -1,25 +1,29 @@
 package com.java.practice;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 import org.testng.annotations.Test;
 
 public class BasicsOfJava {
-@Test
-	public static void addTwoNumbers() {
-	int a[]= {4,6,8,7,0,5,4,0};
-	System.out.println(a.length);
-	System.out.println(a[3]);
-	for(int b:a) {
-		System.out.println(b);
-	}}
-	public static void addTwoNumbers1() {
-		int a[]= {4,6,8,7};
-		System.out.println(a.length);
-		System.out.println(a[3]);
-		for(int b:a) {
-			System.out.println(b);
+	@Test
+	void findLargestAndSmall() {
+		int a[] = { 2, 8, 7, 3, 1, 9 };
+		int max = a[0];// 2
+		int min = a[0];// 2
+
+		for (int i = 0; i < a.length; i++) {
+
+			if (max > a[i]) {
+				a[i] = max;
+			} else if (a[i] < min) {
+				min = a[i];
+			}
+
 		}
+		System.out.println(max);
 
 	}
 }
