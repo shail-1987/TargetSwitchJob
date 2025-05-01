@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-28T23:41:13 IST" name="Default suite" finished-at="2025-04-28T23:41:13 IST" duration-ms="47">
+  <suite started-at="2025-05-01T10:42:43 IST" name="Default suite" finished-at="2025-05-01T10:42:43 IST" duration-ms="18">
     <groups>
     </groups>
-    <test started-at="2025-04-28T23:41:13 IST" name="Default test" finished-at="2025-04-28T23:41:13 IST" duration-ms="47">
-      <class name="com.java.practice.BasicsOfJava">
-        <test-method signature="findLargestAndSmall()[pri:0, instance:com.java.practice.BasicsOfJava@2ca26d77]" started-at="2025-04-28T23:41:13 IST" name="findLargestAndSmall" finished-at="2025-04-28T23:41:13 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findLargestAndSmall -->
-      </class> <!-- com.java.practice.BasicsOfJava -->
+    <test started-at="2025-05-01T10:42:43 IST" name="Default test" finished-at="2025-05-01T10:42:43 IST" duration-ms="18">
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
